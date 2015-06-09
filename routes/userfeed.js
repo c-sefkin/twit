@@ -1,4 +1,4 @@
-Dobby.PostsRoute = Ember.Route.extend({
+Dobby.UserfeedRoute = Ember.Route.extend({
   controllerName: '',
   renderTemplate: function(){
     this.render('');
