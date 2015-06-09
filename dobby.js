@@ -1,0 +1,1 @@
+Dobby = Ember.Application.create();

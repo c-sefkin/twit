@@ -1,1 +1,0 @@
-Bustle = Ember.Application.create();
