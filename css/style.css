@@ -1,0 +1,106 @@
+.row{
+  margin:10px;
+}
+
+.headlines {
+  border: 2px solid black;
+  padding: 3px;
+  border-radius: 10px;
+  text-align: center;
+  width:  40%;
+  margin: 1px 5%;
+}
+
+.item img{
+  margin:0 auto;
+}
+
+div img {
+  border-radius: 5px;
+}
+
+.logo-li{
+  margin-right:50px;
+}
+
+.logo-li img{
+  width:90px;
+  margin-top:10px;
+  padding:10px;
+}
+
+.navbar{
+  /*height:100px;*/
+}
+
+button, .btn, .btn-default {
+  border:  none;
+  background-color: none;
+  background: none;
+  padding: 0px;
+  box-shadow: none;
+  float:right;
+  outline: 0;
+  outline: none;
+
+}
+
+.dropdown-menu{
+  margin-top:6%;
+  margin-left:86%;
+}
+
+.gray-image{
+  float:right;
+}
+
+.btn:focus, .btn:active{
+  outline: 0 !important;
+  outline: none !important;
+  border: none !important;
+
+}
+
+#my-carousel{
+  clear:both;
+}
+
+#my-carousel ul,
+#my-carousel li{
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+}
+
+#my-carousel ul{
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+#my-carousel li{
+    display: block;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    width: 16%;
+    margin: 2%;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100px;
+}
+
+.carousel-indicators li{
+  background-color:transparent;
+  border-color:grey;
+}
+
+.carousel-indicators .active{
+  background-color:teal;
+}
+
+#myCarousel{
+  margin:0 auto;
+  width:45%;
+}

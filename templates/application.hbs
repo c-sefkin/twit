@@ -1,0 +1,27 @@
+<div class="container">
+  <nav class="navbar navbar-default" role="navigation">
+    <ul class="nav navbar-nav">
+      <li class="logo-li"><img src="images/logo.png" /></li>
+
+      <li>{{#link-to 'headlines'}}Home{{/link-to}}</li>
+</ul>
+      {{#if isHovering}}
+      <div class="dropdown" {{action "toggleBack" on="mouseLeave"}}>
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+          <img src="images/social-buttons-color.png" />
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Facebook</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Twitter</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pinterest</a></li>
+
+        </ul>
+      </div>
+      {{else}}
+        <img class="gray-image" src="images/social-buttons-gray.png" {{action "toggleSocialIcons" on="mouseEnter"}}/>
+      {{/if}}
+  </nav>
+
+  {{outlet}}
+
+</div>
