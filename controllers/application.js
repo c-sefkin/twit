@@ -1,4 +1,4 @@
-Bustle.ApplicationController = Ember.Controller.extend({
+Dobby.ApplicationController = Ember.Controller.extend({
   isHovering: false,
   actions: {
     toggleSocialIcons: function(){
@@ -6,7 +6,7 @@ Bustle.ApplicationController = Ember.Controller.extend({
     },
     toggleBack: function(){
       this.set('isHovering', false);
-      
+
     },
   }
 });
