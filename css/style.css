@@ -3,6 +3,18 @@
   border-radius: 10px;
   padding-left: 10px;
   margin-top: 5px;
+  background-color: white;
+}
+
+nav {
+  margin-top: 10px;
+}
+.container {
+  background-image: url('../images/blue-gradient.jpg');
+  background-size: cover;
+  border: 3px transparent;
+  border-radius: 10px;
+  padding-top: 10px:
 }
 
 #userTweet {
@@ -10,19 +22,37 @@
   border-radius: 10px;
   padding: 0px 0px 10px 10px;
   margin-bottom: 5px;
+  background-color: white;
 }
 
 #userProfile, #whoToFollow, #trending {
   border: 3px solid gray;
   border-radius: 10px;
   padding: 10px;
-  margin: 5px 0px;
+  margin-bottom: 5px;
   min-height: 100px;
+  background-color: white;
 }
 
 nav.navbar {
   background-color: white;
   background-image: none;
+  border: 3px solid gray;
+  border-radius: 10px;
+}
+nav li {
+  margin: 0px 5px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 54.667px;
+}
+a.nav-link {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+a>img{
+  height: 50px;
 }
 /*.row{
   margin:10px;
