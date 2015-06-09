@@ -19,6 +19,11 @@
   margin: 5px 0px;
   min-height: 100px;
 }
+
+nav.navbar {
+  background-color: white;
+  background-image: none;
+}
 /*.row{
   margin:10px;
 }
