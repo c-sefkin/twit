@@ -40,8 +40,9 @@
              <label for="tweet">Enter your Tweet</label>
              <br>
              {{input id="tweet" class="form-control" maxlength="141" value=tweet required="true"}}
+
            </div>
-           <button class="btn btn-primary">Tweet!</button>
+           <button class="btn btn-primary" {{action 'getTimeStamp'}}>Tweet!</button>
          {{else}}
            <div class='form-group'>
              <br>
