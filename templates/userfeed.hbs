@@ -10,14 +10,26 @@
 
     <div>
       <span>User Tweet Form</span>
+      <div id="userTweet">
+        <form id="userTweetForm">
+         <div class='form-group'>
+           <label for="tweet">Enter your Tweet</label>
+           <br>
+           {{input id="tweet" class="form-control" value=tweet required maxlength="141"}}
+         </div>
+         <button class="btn btn-primary">Tweet!</button>
+       </form>
+      </div>
     </div>
 
     <div>
       <h3>Twitter Feed</h3>
       <ul>
         {{#each}}
-        <li>{{userName}} | {{twittername}} <br> {{tweet}} </li>
+        <li>{{userName}} | {{twitterName}} | {{timeStamp}} <br> {{tweet}} </li>
+        <br>
         {{/each}}
+      </ul>
     </div>
   </div>
 
