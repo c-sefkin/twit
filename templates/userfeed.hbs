@@ -3,26 +3,44 @@
 </div>
 
 <div class="row">
+
   <div class="col-sm-3">
-    <a href="#">User Profile Area</a>
+    <div id="userProfile">
+      <a href="#">User Profile Area</a>
+    </div>
+    <div id="whoToFollow">
+      <span>Who to Follow</span>
+    </div>
+    <div id="trending">
+      <span>Trending</span>
+    </div>
   </div>
+
   <div class="col-sm-9">
 
     <div>
-      <span>User Tweet Form</span>
       <div id="userTweet">
-        <form id="userTweetForm">
-         <div class='form-group'>
-           <label for="tweet">Enter your Tweet</label>
-           <br>
-           {{input id="tweet" class="form-control" value=tweet required maxlength="141"}}
-         </div>
-         <button class="btn btn-primary">Tweet!</button>
+        <form id="userTweetForm" {{action 'showFullForm' on="mouseEnter"}} >
+         {{#if isTweeting }}
+           <div class='form-group' {{action 'hideFullForm' on='mouseLeave'}}>
+             <label for="tweet">Enter your Tweet</label>
+             <br>
+             {{input id="tweet" class="form-control" maxlength="141" value=tweet required="true"}}
+           </div>
+           <button class="btn btn-primary">Tweet!</button>
+         {{else}}
+           <div class='form-group'>
+             <br>
+            {{input id="tweet" class="form-control" maxlength="141" value=tweet required="true" placeholder="What is happening?"}}
+          </div>
+          <br>
+          <br>
+         {{/if}}
        </form>
       </div>
     </div>
 
-    <div>
+    <div id="twitterFeed">
       <h3>Twitter Feed</h3>
       <ul>
         {{#each}}
