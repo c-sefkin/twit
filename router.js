@@ -1,4 +1,4 @@
-Bustle.Router.map(function() {
+Dobby.Router.map(function() {
   this.resource('userfeed', {path:'/'});
 
 
