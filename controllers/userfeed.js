@@ -1,5 +1,5 @@
-Dobby.UserfeedController = Ember.Controller.extend({
-  isTweeting: false;
+Dobby.UserfeedController = Ember.ArrayController.extend({
+  isTweeting: false,
   actions: {
     showFullForm: function() {
       this.set('isTweeting', true);
