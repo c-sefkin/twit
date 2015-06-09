@@ -7,7 +7,18 @@
     <a href="#">User Profile Area</a>
   </div>
   <div class="col-sm-9">
-    <a href="#">Twitter Feed Area</a>
+
+    <div>
+      <span>User Tweet Form</span>
+    </div>
+
+    <div>
+      <h3>Twitter Feed</h3>
+      <ul>
+        {{#each}}
+        <li>{{userName}} | {{twittername}} <br> {{tweet}} </li>
+        {{/each}}
+    </div>
   </div>
 
 </div>
